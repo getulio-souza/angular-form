@@ -1,8 +1,8 @@
 <section class="form-container">
   <h1>{{title}}</h1>
   <form #loginForm="ngForm"(ngSubmit)="loginUser(loginForm.value)">
-    <input type="email" required #name=ngModel name="email" placeholder="e-mail" ngModel>
-    <span *ngIf="name.invalid && name.touched">Please, enter a valid input</span>
+    <input type="email" required #name=ngModel email name="email" placeholder="e-mail" ngModel>
+    <span *ngIf="name.invalid && name.touched">Please, enter a valid e-mail</span>
     <input type="password" name="password" minlength="5" required #password="ngModel" placeholder="password" ngModel>
     <span *ngIf="name.invalid && name.touched">Please, enter a valid password</span>
     <button [disabled]="loginForm.invalid" class="form-btn">login</button>
