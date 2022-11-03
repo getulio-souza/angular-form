@@ -1,0 +1,31 @@
+
+h1{
+  text-align: center;
+  color: #fff;
+}
+.form-container{
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    input{
+      margin-top: 5px;
+      text-align: center;
+    }
+    span{
+      color: red;
+      font-size: 10px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+  }
+  .form-btn{
+    margin-top: 5px;
+  }
+}
